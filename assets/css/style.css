@@ -38,7 +38,6 @@ body{
 
 .body-body{
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    word-wrap: break-word;
 }
 
 .footer {
@@ -173,8 +172,8 @@ h3 {
     margin-left: 20px;
     margin-top: 20px;
     position: relative;
-    width: 250px;
-    height: 200px;
+    width: 50%;
+    height: 50%;
 }
 
 .hangman-btn {
@@ -315,39 +314,160 @@ h3 {
     box-shadow: 2px 5px 5px black;
 }
 
+.name-input{
+    width: 80%;
+    max-width: 600px;
+}
+
+.email-input{
+    width: 80%;
+    max-width: 600px;
+}
+
+.message{
+    width: 80%;
+    max-width: 600px;
+}
+
+
 /* Media Queries */
 
 @media (max-width: 980px){
 
+    #wrapper{
+        width: 980px;
+    }
+    .header{
+        float: center;
+        width: 980px;
+    }
+    .body{
+        width: 700px;
+    }
+    .footer{
+        width: 980px;
+        left: 0;
+    }
+
+    .body-body{
+        width: 700px;
+    }
+
+    .body-header{
+        width: 650px;
+    }
+
+
+    /* About Page */
+    .profile-picture {
+        margin-right: 10px;
+        float: left;
+    }
+
+    .content2{
+        display: inline-block;
+    }
+
+    /* Portfolio Page */
+    .hangman{
+        margin-left: 75px;
+    }
+
+    .rpg{
+        margin-right: 75px;
+        float: right;
+    }
+
+    .trivia{
+        margin-left: 75px;
+    }
+
+    .widget{
+        margin-right: 75px;
+    }
+
+    .rock{
+        margin-left: 225px;
+        margin-bottom: 20px;
+    }
+
 }
 
 @media (max-width: 768px){
+    /* General Layout */
     #wrapper{
-        width: 768px;
+        width: 668px;
     }
     .header{
-        width: 768px;
+        float: center;
+        width: 725px;
     }
     .body{
-        width: 768px;
+        width: 668px;
     }
-    .body-header{
-        width: 768px;
+    .footer{
+        width: 725px;
+        left: 0;
     }
-    .footer {
-        width: 768px;
-    }
-    body{
-        width: 500px;
-    }
+ 
     .buttons{
-        margin-left: 250px;
+        margin-left: 290px
     }
+
+    .body-body{
+        width: 668px;
+    }
+
+    .body-header{
+        width: 630px;
+    }
+
+
+    /* About Page */
+    .profile-picture {
+        margin-right: 10px;
+        float: left;
+    }
+
+
+    .content1{
+        float: left;
+    }
+
+    .content2{
+        display: inline-block;
+    }
+
+    /* Portfolio Page */
+    .hangman{
+        margin-left: 75px;
+    }
+
+    .rpg{
+        margin-right: 75px;
+        float: right;
+    }
+
+    .trivia{
+        margin-left: 75px;
+    }
+
+    .widget{
+        margin-right: 75px;
+    }
+
+    .rock{
+        margin-left: 208.5px;
+        margin-bottom: 20px;
+    }
+
 }
 
 @media (max-width: 640px){
+
+    /* General Layout */
     #wrapper{
-        width: 600px;
+        width: 500px;
     }
     .header{
         width: 640px;
@@ -355,10 +475,11 @@ h3 {
     }
     .body{
         margin-top: 100px;
-        width: 600px;
+        width: 550px;
     }
     .footer{
         width: 640px;
+        z-index: 1;
     }
     .name{
         top: 0;
@@ -374,6 +495,115 @@ h3 {
         width: 600px;
     }
     .body-header{
-        width: 600px;
+        width: 500px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+
+    /* About Page */
+    .profile-picture {
+        height: 50%;
+        width: 70%;
+        margin-left: 60px;
+    }
+    .content1{
+        width: 90%;
+        margin-right: 25px;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .content2{
+        display: inline-block;
+        width: 90%;
+        text-align: center;
+    }
+
+    /* Portfolio Page */
+    .hangman{
+        margin-left: 100px;
+        margin-top:20px;
+    }
+
+    .hangman-img{
+        width: 350px;
+        height: 300px;
+    }
+
+    .hangman-btn{
+        width: 350px;
+    }
+
+    .rpg{
+        margin-top: 20px;
+        margin-right: 150px;
+        margin-bottom: 20px;
+    }
+
+    .rpg-img{
+        width: 350px;
+        height: 300px;
+    }
+
+    .rpg-btn{
+        width: 350px;
+        margin-left: -25px;
+        z-index: 1;
+    }
+
+    .trivia{
+        margin-top: 20px;
+        margin-left: 100px;
+    }
+
+    .trivia-img{
+        width: 350px;
+        height: 300px;
+    }
+
+    .trivia-btn{
+        bottom: 5%;
+        width: 350px;
+    }
+
+    .trivia-btn:hover {
+        bottom: 6%;
+    }
+
+    .widget{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: 150px;
+    }
+
+    .widget-img{
+        width: 350px;
+        height: 300px;
+    }
+
+    .widget-btn {
+        z-index: 1;
+        width: 350px;
+    }
+
+    .rock{
+        margin-top:20px;
+        margin-bottom: 20px;
+        margin-left: 100px;
+    }
+
+    .rock-img{
+        width: 350px;
+        height: 300px;
+    }
+
+    .rock-btn{
+        bottom: 5%;
+        width: 350px;
+    }
+
+    .rock-btn:hover {
+        bottom: 6%;
     }
 }
